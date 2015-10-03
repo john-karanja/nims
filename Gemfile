@@ -22,7 +22,12 @@ gem 'bootstrap-sass', '~> 3.3.5'
 
 
 
-gem 'pg'
+group :development, :test do
+  gem 'sqlite3'
+end
+group :production do
+  gem 'pg'
+end
 
 
 
