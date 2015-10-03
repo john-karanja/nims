@@ -16,7 +16,7 @@
 
 			</div>	
 	</div>
-
+d
 	<div class="row">
 			<div class="search_box">
 				<div class="input-group">
@@ -25,37 +25,33 @@
 					</span>
 					<input type="text" class="form-control" placeholder="Search for recent transactions">
 
-					<br>
-					<br>
-					<br>
-
-					<div class="row">
-			<h4>Payment History</h4><br>
-
-			<% @posts.each do |post| %>
-	<div>Recepient Name: <%= post.title %></div>
-	<div>Recepient Number: <%= truncate(post.body, :lenght => 35)%>
-	<div>Amount: <%= post.user_amount %>
-	</div>
-	<div>You are logged in as: <%= post.user.email %></div>
-	
-	<%= link_to "View Request", post %>
-	<!-- <%= link_to "Send Cash", post %> -->
-	<% end %>
-
-	</div>
-
-
-				</div>
+							
 			</div>
+		</div>
+
+				
 	</div>
+	
 
 	
 
 	<div class="row">
 		<div class="pay_up_0">
-			<p>Welcome to pay PayUp</p>
-			<p>Looks like you have no new Transactions</p>
+			
+			<p>Here is your payment history</p>
+
+					
+
+			<% @posts.each do |post| %>
+			<ul>
+				<li><%= post.title %> | <%= link_to "View Request", post %> </li>
+			</ul>	
+			<% end %>
+
+
+
+
+			</div>
 		</div>	
 	</div>
 </div>
