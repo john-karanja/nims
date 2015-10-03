@@ -16,7 +16,9 @@
         </li>
         <li><a href="#">Settings</a></li>
         <li><a href="#">Help</a></li>
-        <li><a href="#">Hi, User</a></li>
+        <% if user_signed_in? %>
+        <li><a href="#">Hi,  <%= current_user.email %></a></li>
+        <% end %>
       </ul>
 
     </div>
