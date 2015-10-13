@@ -23,6 +23,7 @@
 */
 body {
   font-family: 'Roboto', sans, sans-serif, helvetica;
+  background-color: #f5f5f5;
 }
 
 
@@ -34,7 +35,7 @@ body {
 .main-logo {
   width: 141px;
   height: 87px;
-  margin-top: -30px;
+  margin-top: -45px;
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
@@ -43,20 +44,38 @@ body {
 
 }
 
+/*
+=============================
+  Navabr
+=============================
+*/
 
+.navbar-default {
+  background-color: #fff;
+  border-radius: 0px;
+  border: #fff;
+  box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.3);
+  padding: 10px;
+}
 /*
 =============================
   Forms & Form Layouts
 =============================
 */
-.form_wrapper {
-  width: 35.0877192982%;
+.form-wrapper {
+  width: 47.088%;
   border: 1px solid #fff;
   margin: 0 auto;
   padding: 40px;
   background-color: #fff;
-  box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
   border-radius: 2px;
+  box-shadow: 1px 3px 3px 1px rgba(0,0,0,0.2);
+}
+.form-wrapper.form-wrapper-top {
+  background-color: #F8F8F8;
+  height: 0px;
+  margin-bottom: 1px;
+  border-color: #f8f8f8;
 }
 input[type] {
   border-radius: 1px;
@@ -67,6 +86,22 @@ input[type] {
 .search .input-group {
   width: 67.5%;
   margin: 0 auto;
+}
+.search {
+  padding: 3.75939849624% 0px;
+}
+
+.search.form {
+  display: inline-block;
+  padding: 0;
+  width: 100%;
+}
+.checkbox.form-wrapper {
+    width: 100%;
+    margin-bottom: 19px;
+    box-shadow: none;
+    border: 1px solid;
+    padding: 10px;
 }
 
 /*
@@ -81,6 +116,27 @@ input[type] {
   line-height: 1.5;
   font-weight: 400;
 }
+.btn-group button {
+  font-size: 1.1em;
+  font-weight: 700;
+}
+.new-payment.make h2, .new-payment.make h3 {
+  font-weight: 300;
+}
+.form-wrapper-top h3 {
+  text-align: center;
+  margin: 0px;
+  font-weight: 400;
+}
+.search.form .fa {
+  float: right;
+  font-size: 2em;
+  margin-top: -11%;
+}
+.btn-group h1 {
+  text-align: center;
+}
+
 .form_wrapper p {
   text-align: center
 }
@@ -90,15 +146,26 @@ input[type] {
   
 .balance h3 {
   float: right;
+  margin-top: 7.30994152047%;
+  font-weight: 300;
 }
   span {
     font-size: 0.8em;
   }
 
-.pay_up_0 {
+.details {
   text-align: center;
-  /* font-size: 1.5em; */
-  padding-top: 100px;
+}
+.details p {
+  display: inline-block;
+  font-size: 1.4em;
+  padding: 0px 10px;
+}
+.details .fa {
+  font-size: 1.4em;
+}
+.modal-header h3 {
+  text-align: center;
 }
 
 
@@ -111,6 +178,9 @@ input[type] {
 .btn {
   border-radius: 2px;
 }
+.btn-group {
+  padding-bottom: 10px; 
+}
 .register_btn .btn {
   width: 100%;
   background-color: rgb(255,126,130);
@@ -122,6 +192,16 @@ input[type] {
 
 /*
 =============================
+  Colors
+=============================
+*/
+
+
+.form-wrapper a {
+  color: #000;
+}
+/*
+=============================
   Layout
 =============================
 */
@@ -130,6 +210,4 @@ input[type] {
   max-width: 72%;
   margin: 0 auto;
 }
-.search {
-  padding: 3.75939849624% 0px;
-}
+
