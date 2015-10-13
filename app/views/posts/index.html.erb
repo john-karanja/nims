@@ -1,57 +1,38 @@
 <%= render 'layouts/navbar_dash' %>
 
 <div class="container">
-	<div class="row pay_quick_info">
+	<div class="row new-payment">
 		<div class="col-sm-6">
-			<div class="payment_btn">
-					<!--<a class="btn btn-danger btn-lg" href="#" role="button"><i class="fa fa-plus"></i><%= link_to "New Payment ", new_post_path %> -->
-
-						<%= button_to "New Payment", new_post_path, :class => "button", :method => :get  %><br />
-
-					</a>
-			</div>
-		</div>
-			<div class="col-sm-6">
-				<h3>Balance <span>ksh 100,000</span></h3>
-
-			</div>	
-	</div>
-
-	<div class="row">
-			<div class="search_box">
-				<div class="input-group">
-					<span class="input-group-btn">
-						<button class="btn btn-default" type="button">GO!</button>
-					</span>
-					<input type="text" class="form-control" placeholder="Search for recent transactions">
-
-							
-			</div>
-		</div>
-
-				
-	</div>
-	
-
-	
-
-	<div class="row">
-		<div class="pay_up_0">
-			
-			<p><strong>Here is your payment history:</strong></p>
-
-					
-
-			<% @posts.each do |post| %>
-			<ul>
-				<li><%= post.title %> | <%= link_to "View Request", post %> </li>
-			</ul>	
-			<% end %>
-
-
-
-
+			<div class="payment-btn">
+				<%= link_to "New Payment", new_post_path, :class => "btn btn-primary btn-lg", :method => :get  %>
 			</div>
 		</div>	
+			<div class="col-sm-6">
+				<div class="balance">
+					<h3>Balance <span>100,000</span></h3>
+				</div>
+			</div>
+		</div>	
+
+			<div class="row search_box">
+				<div class="col-sm-12 search">
+				<div class="input-group">
+		      		<input type="text" class="form-control" placeholder="Search for...">
+		      		<span class="input-group-btn">
+		        		<button class="btn btn-danger" type="button">
+		        			 <span class=" glyphicon glyphicon-search"></span>
+		        		</button>
+		      		</span>
+		    	</div>
+			</div>	
+		</div>	
+	<hr>
+	<div class="welcome">
+		<p>Welcome to nims</p>
+		<p>Looks like you have no Transactions!</p>
 	</div>
+
+	
+	
 </div>
+
