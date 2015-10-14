@@ -18,6 +18,10 @@ class PostsController < ApplicationController
   	end
   end
 
+  def details
+   @posts = Post.all.order("created_at DESC")
+ end 
+
   def show
   	
   end
