@@ -54,7 +54,7 @@ body {
   background-color: #fff;
   border-radius: 0px;
   border: #fff;
-  box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.3);
+  box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.2);
   padding: 10px;
 }
 /*
@@ -97,11 +97,11 @@ input[type] {
   width: 100%;
 }
 .checkbox.form-wrapper {
-    width: 100%;
-    margin-bottom: 19px;
-    box-shadow: none;
-    border: 1px solid;
-    padding: 10px;
+  width: 100%;
+  margin-bottom: 19px;
+  box-shadow: none;
+  border: 1px solid;
+  padding: 10px;
 }
 
 /*
@@ -125,7 +125,7 @@ input[type] {
 }
 .form-wrapper-top h3 {
   text-align: center;
-  margin: 0px;
+  margin-top: -28px;
   font-weight: 400;
 }
 .search.form .fa {
@@ -134,6 +134,10 @@ input[type] {
   margin-top: -11%;
 }
 .btn-group h1 {
+  text-align: center;
+}
+.form-wrapper-top p {
+  margin-top: 14px;
   text-align: center;
 }
 
@@ -181,6 +185,9 @@ input[type] {
 .btn-group {
   padding-bottom: 10px; 
 }
+.payment-btn {
+  margin-top: 3.94321766562%;
+}
 .register_btn .btn {
   width: 100%;
   background-color: rgb(255,126,130);
@@ -188,6 +195,32 @@ input[type] {
   border-color: rgb(255,126,130);
   box-shadow: 0px 2px 0px #E00007;
   font-weight: 700;
+}
+.next-btn {
+  text-align: center;
+}
+button.common{
+  font-size: 1.2em;
+  font-weight: 700;
+  padding: 5px 25px;
+}
+.set-amount, .nav-btn {
+  display: inline-block;
+  width: 100%;
+}
+
+.set-amount .input-group {
+  width: 63%;
+}
+.apply-all {
+  float: right;
+  margin-top: -48px;
+}
+.next-btn.amount {
+  float: right;
+}
+.previous-btn {
+  float: left;
 }
 
 /*
