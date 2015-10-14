@@ -67,7 +67,7 @@ body {
   border: 1px solid #fff;
   margin: 0 auto;
   padding: 40px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.85);
   border-radius: 2px;
   box-shadow: 1px 3px 3px 1px rgba(0,0,0,0.2);
 }
@@ -76,6 +76,8 @@ body {
   height: 0px;
   margin-bottom: 1px;
   border-color: #f8f8f8;
+  box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.2);
+
 }
 input[type] {
   border-radius: 1px;
@@ -122,6 +124,7 @@ input[type] {
 }
 .new-payment.make h2, .new-payment.make h3 {
   font-weight: 300;
+  font-size: 1.4em;
 }
 .form-wrapper-top h3 {
   text-align: center;
@@ -150,11 +153,12 @@ input[type] {
   
 .balance h3 {
   float: right;
-  margin-top: 7.30994152047%;
+  margin-top: 5.31%;
   font-weight: 300;
 }
   span {
-    font-size: 0.8em;
+  font-size: 0.9em;
+  font-weight: 300;
   }
 
 .details {
@@ -162,11 +166,14 @@ input[type] {
 }
 .details p {
   display: inline-block;
-  font-size: 1.4em;
   padding: 0px 10px;
 }
-.details .fa {
-  font-size: 1.4em;
+.details .fa, .details p {
+  font-size: 1.1em;
+  padding-top: 2.5px;
+}
+.details .fa-pencil {
+  padding-right: 10px;
 }
 .modal-header h3 {
   text-align: center;
